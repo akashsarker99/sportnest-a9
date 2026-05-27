@@ -4,10 +4,8 @@ import { FaArrowLeft } from "react-icons/fa6";
 const NotFound = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-white px-6">
-
       <div className="text-center max-w-xl">
-
-        <h1 className="text-8xl md:text-9xl font-extrabold text-green-500">
+        <h1 className="text-8xl md:text-9xl font-extrabold text-cyan-500">
           404
         </h1>
 
@@ -20,17 +18,12 @@ const NotFound = () => {
         </p>
 
         <Link href={"/"}>
-          <button className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#22C55E] hover:bg-green-600 text-white font-semibold transition">
-
+          <button className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-600 text-white font-semibold transition">
             <FaArrowLeft />
-
             Back To Home
-
           </button>
         </Link>
-
       </div>
-
     </div>
   );
 };

@@ -16,8 +16,8 @@ const Navbar = () => {
             />
 
             <h1 className="text-2xl font-extrabold">
-              <span className="text-cyan-600">Sport</span>
-              <span className="text-green-500">Nest</span>
+              <span className="text-[#0F172A]">Sport</span>
+              <span className="text-[#06B6D4]">Nest</span>
             </h1>
           </Link>
         </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={"/"}
-                className=" bg-transparent hover:text-green-500"
+                className=" bg-transparent hover:text-cyan-500"
               >
                 Home
               </Link>
@@ -36,7 +36,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={"/all-facilities"}
-                className=" bg-transparent hover:text-green-500"
+                className=" bg-transparent hover:text-cyan-500"
               >
                 All Facilities
               </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={"/mybookings"}
-                className=" bg-transparent hover:text-green-500"
+                className=" bg-transparent hover:text-cyan-500"
               >
                 My Bookings
               </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={"/add-facility"}
-                className=" bg-transparent hover:text-green-500 "
+                className=" bg-transparent hover:text-cyan-500 "
               >
                 Add Facility
               </Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
             <li>
               <Link
                 href={"/manage-facilities"}
-                className=" bg-transparent hover:text-green-500"
+                className=" bg-transparent hover:text-cyan-500"
               >
                 Manage My Facilities
               </Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
               role="button"
               className="btn btn-ghost btn-circle avatar"
             >
-              <div className="w-10 rounded-full border-2 border-green-500 overflow-hidden">
+              <div className="w-10 rounded-full border-2 border-cyan-500 overflow-hidden">
                 <Image src={"/user.png"} alt="user" width={40} height={40} />
               </div>
             </div>
@@ -91,7 +91,7 @@ const Navbar = () => {
               <li><Link href={"/add-facility"}>Add Facility</Link></li>
               <li><Link href={"/manage-facilities"}>Manage My Facilities</Link></li>
               <li className="pt-2">
-                <button className="btn bg-[#22C55E] hover:bg-green-600 border-none text-white">
+                <button className="btn bg-cyan-500 hover:bg-cyan-600 border-none text-white">
                   Logout
                 </button>
               </li>
