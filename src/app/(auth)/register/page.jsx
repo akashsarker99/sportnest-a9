@@ -11,12 +11,15 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+
 import { FcGoogle } from "react-icons/fc";
 
 const RegisterPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
+
     const formData = new FormData(e.currentTarget);
+
     const data = Object.fromEntries(formData);
 
     console.log(data);
@@ -39,7 +42,13 @@ const RegisterPage = () => {
           <TextField isRequired name="name">
             <Label>Full Name</Label>
 
-            <Input placeholder="Enter your full name" />
+            <Input
+              placeholder="Enter your full name"
+              classNames={{
+                inputWrapper:
+                  "rounded-xl border border-gray-200 focus-within:border-[#24B1B1]",
+              }}
+            />
 
             <FieldError />
           </TextField>
@@ -58,7 +67,13 @@ const RegisterPage = () => {
           >
             <Label>Email Address</Label>
 
-            <Input placeholder="Enter your email address" />
+            <Input
+              placeholder="Enter your email address"
+              classNames={{
+                inputWrapper:
+                  "rounded-xl border border-gray-200 focus-within:border-[#24B1B1]",
+              }}
+            />
 
             <FieldError />
           </TextField>
@@ -66,7 +81,13 @@ const RegisterPage = () => {
           <TextField isRequired name="photo">
             <Label>Photo URL</Label>
 
-            <Input placeholder="Enter your photo URL" />
+            <Input
+              placeholder="Enter your photo URL"
+              classNames={{
+                inputWrapper:
+                  "rounded-xl border border-gray-200 focus-within:border-[#24B1B1]",
+              }}
+            />
 
             <FieldError />
           </TextField>
@@ -94,7 +115,13 @@ const RegisterPage = () => {
           >
             <Label>Password</Label>
 
-            <Input placeholder="Enter your password" />
+            <Input
+              placeholder="Enter your password"
+              classNames={{
+                inputWrapper:
+                  "rounded-xl border border-gray-200 focus-within:border-[#24B1B1]",
+              }}
+            />
 
             <Description>
               Must contain at least 6 characters, one uppercase and one
@@ -106,7 +133,7 @@ const RegisterPage = () => {
 
           <Button
             type="submit"
-            className="w-full h-12 rounded-xl bg-cyan-500 hover:bg-cyan-600 text-white font-semibold text-base"
+            className="w-full h-12 rounded-xl bg-linear-to-l from-[#24B1B1] to-[#007979] hover:opacity-90 text-white font-semibold text-base"
           >
             Register
           </Button>
@@ -114,7 +141,7 @@ const RegisterPage = () => {
 
         <div className="divider text-gray-400 my-8">OR</div>
 
-        <button className="w-full py-3 rounded-xl border border-gray-200 hover:border-cyan-300 hover:bg-cyan-50 text-slate-600 font-medium transition duration-300 flex items-center justify-center gap-3">
+        <button className="w-full py-3 rounded-xl border border-gray-200 hover:border-[#24B1B1] hover:bg-cyan-50 text-slate-600 font-medium transition duration-300 flex items-center justify-center gap-3">
           <FcGoogle className="text-2xl" />
           Continue with Google
         </button>
@@ -123,7 +150,7 @@ const RegisterPage = () => {
           Already have an account?
           <Link
             href={"/login"}
-            className="text-cyan-500 hover:text-cyan-600 font-semibold ml-1"
+            className="text-[#24B1B1] hover:text-[#007979] font-semibold ml-1"
           >
             Login
           </Link>

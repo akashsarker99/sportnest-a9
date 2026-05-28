@@ -15,7 +15,7 @@ const FeaturedCard = ({ facility }) => {
   } = facility;
 
   return (
-    <div className="group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-cyan-300 transition duration-300 hover:shadow-xl flex flex-col h-full shadow">
+    <div className="group bg-white rounded-2xl overflow-hidden border border-gray-200 hover:border-[#24B1B1] transition duration-300 hover:shadow-xl flex flex-col h-full shadow">
       <div className="relative overflow-hidden">
         <Image
           src={image}
@@ -25,7 +25,7 @@ const FeaturedCard = ({ facility }) => {
           className="w-full h-56 object-cover group-hover:scale-105 transition duration-500"
         />
 
-        <div className="absolute top-4 left-4 bg-cyan-500 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-md">
+        <div className="absolute top-4 left-4 bg-linear-to-l from-[#24B1B1] to-[#007979] text-white text-sm font-semibold px-4 py-2 rounded-full shadow-md">
           {facility_type}
         </div>
       </div>
@@ -33,19 +33,19 @@ const FeaturedCard = ({ facility }) => {
       <div className="p-6 flex flex-col flex-1">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h2 className="text-2xl font-bold text-slate-600 leading-snug">
+            <h2 className="text-2xl font-bold text-slate-700 leading-snug">
               {name}
             </h2>
 
             <div className="flex items-center gap-2 text-gray-500 mt-3">
-              <FaLocationDot className="text-cyan-500" />
+              <FaLocationDot className="text-[#007979]" />
 
               <p>{location}</p>
             </div>
           </div>
 
           <div className="text-right shrink-0">
-            <h3 className="text-xl font-bold text-cyan-500">
+            <h3 className="text-xl font-bold bg-linear-to-l from-[#24B1B1] to-[#007979] bg-clip-text text-transparent">
               {price_per_hour} TK
             </h3>
 
@@ -55,13 +55,13 @@ const FeaturedCard = ({ facility }) => {
 
         <div className="flex items-center justify-between text-gray-600 mt-6">
           <div className="flex items-center gap-2">
-            <FaUsers className="text-cyan-500" />
+            <FaUsers className="text-[#007979]" />
 
             <p>{capacity} Players</p>
           </div>
 
           <div className="flex items-center gap-2">
-            <FaClock className="text-cyan-500" />
+            <FaClock className="text-[#007979]" />
 
             <p>{available_slots[0]}</p>
           </div>
@@ -69,8 +69,9 @@ const FeaturedCard = ({ facility }) => {
 
         <div className="mt-auto pt-6 flex justify-end">
           <Link href={`/facility/${id}`}>
-            <button className="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-600 text-white font-semibold transition duration-300 shadow-md hover:shadow-cyan-200 flex items-center gap-2">
-              Book Now  <FaArrowRight />
+            <button className="px-6 py-3 rounded-xl bg-linear-to-l from-[#24B1B1] to-[#007979] text-white font-semibold transition duration-300 shadow-md hover:scale-103 flex items-center gap-2">
+              Book Now
+              <FaArrowRight />
             </button>
           </Link>
         </div>

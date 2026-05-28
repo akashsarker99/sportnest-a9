@@ -5,11 +5,11 @@ const NotFound = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-white px-6">
       <div className="text-center max-w-xl">
-        <h1 className="text-8xl md:text-9xl font-extrabold text-cyan-500">
+        <h1 className="text-8xl md:text-9xl font-extrabold bg-linear-to-r from-[#24B1B1] to-[#007979] bg-clip-text text-transparent">
           404
         </h1>
 
-        <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mt-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-slate-700 mt-6">
           Page Not Found
         </h2>
 
@@ -18,7 +18,7 @@ const NotFound = () => {
         </p>
 
         <Link href={"/"}>
-          <button className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-600 text-white font-semibold transition">
+          <button className="mt-8 inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-linear-to-r from-[#24B1B1] to-[#007979] hover:opacity-90 text-white font-semibold transition duration-300 shadow-lg hover:shadow-[0_10px_30px_rgba(36,177,177,0.25)]">
             <FaArrowLeft />
             Back To Home
           </button>
