@@ -12,8 +12,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-7 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
           <h1 className="text-3xl font-extrabold mb-4">
-            <span className="text-cyan-600">Sport</span>
-            <span className="text-green-500">Nest</span>
+            <span className="text-white">Sport</span>
+            <span className="text-cyan-500">Nest</span>
           </h1>
           <p className="text-gray-300 leading-7">
             Book your favorite sports facilities easily and manage your bookings
@@ -25,7 +25,7 @@ const Footer = () => {
 
           <ul className="space-y-3 text-gray-300">
             <li>
-              <Link href={"/"} className="hover:text-green-400 ">
+              <Link href={"/"} className="hover:text-cyan-400 ">
                 Home
               </Link>
             </li>
@@ -33,7 +33,7 @@ const Footer = () => {
             <li>
               <Link
                 href={"/all-facilities"}
-                className="hover:text-green-400 "
+                className="hover:text-cyan-400 "
               >
                 All Facilities
               </Link>
@@ -42,7 +42,7 @@ const Footer = () => {
             <li>
               <Link
                 href={"/mybookings"}
-                className="hover:text-green-400 "
+                className="hover:text-cyan-400 "
               >
                 My Bookings
               </Link>
@@ -51,7 +51,7 @@ const Footer = () => {
             <li>
               <Link
                 href={"/add-facility"}
-                className="hover:text-green-400"
+                className="hover:text-cyan-400"
               >
                 Add Facility
               </Link>
@@ -76,19 +76,19 @@ const Footer = () => {
 
           <div className="flex items-center gap-3">
 
-  <div className="w-10 h-10 rounded-full border border-[#334155] flex items-center justify-center hover:border-green-500 hover:text-green-500 transition cursor-pointer">
+  <div className="w-10 h-10 rounded-full border border-cyan-800 flex items-center justify-center hover:border-cyan-500 hover:text-cyan-500 transition cursor-pointer">
     <FaFacebookF size={16} />
   </div>
 
-  <div className="w-10 h-10 rounded-full border border-[#334155] flex items-center justify-center hover:border-green-500 hover:text-green-500 transition cursor-pointer">
+  <div className="w-10 h-10 rounded-full border border-cyan-800 flex items-center justify-center hover:border-cyan-500 hover:text-cyan-500 transition cursor-pointer">
     <FaInstagram size={16} />
   </div>
 
-  <div className="w-10 h-10 rounded-full border border-[#334155] flex items-center justify-center hover:border-green-500 hover:text-green-500 transition cursor-pointer">
+  <div className="w-10 h-10 rounded-full border border-cyan-800 flex items-center justify-center hover:border-cyan-500 hover:text-cyan-500 transition cursor-pointer">
     <FaXTwitter size={16} />
   </div>
 
-  <div className="w-10 h-10 rounded-full border border-[#334155] flex items-center justify-center hover:border-green-500 hover:text-green-500 transition cursor-pointer">
+  <div className="w-10 h-10 rounded-full border border-cyan-800 flex items-center justify-center hover:border-cyan-500 hover:text-cyan-500 transition cursor-pointer">
     <FaGithub size={16} />
   </div>
 

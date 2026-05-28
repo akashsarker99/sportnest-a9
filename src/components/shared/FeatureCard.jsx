@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaLocationDot, FaUsers, FaClock } from "react-icons/fa6";
+import { FaLocationDot, FaUsers, FaClock, FaArrowRight } from "react-icons/fa6";
 
 const FeaturedCard = ({ facility }) => {
   const {
@@ -69,8 +69,8 @@ const FeaturedCard = ({ facility }) => {
 
         <div className="mt-auto pt-6 flex justify-end">
           <Link href={`/facility/${id}`}>
-            <button className="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-600 text-white font-semibold transition duration-300 shadow-md hover:shadow-cyan-200">
-              Book Now
+            <button className="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-600 text-white font-semibold transition duration-300 shadow-md hover:shadow-cyan-200 flex items-center gap-2">
+              Book Now  <FaArrowRight />
             </button>
           </Link>
         </div>
