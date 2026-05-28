@@ -25,10 +25,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-4 text-[16px] font-medium">
             <li>
-              <Link
-                href={"/"}
-                className=" bg-transparent hover:text-cyan-500"
-              >
+              <Link href={"/"} className=" bg-transparent hover:text-cyan-500">
                 Home
               </Link>
             </li>
@@ -70,8 +67,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-
+       
         <div className="navbar-end">
+          
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
@@ -87,9 +85,15 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow bg-white rounded-box w-56 text-[#0F172A] space-y-2"
             >
-              <li><Link href={"/mybookings"}>My Bookings</Link></li>
-              <li><Link href={"/add-facility"}>Add Facility</Link></li>
-              <li><Link href={"/manage-facilities"}>Manage My Facilities</Link></li>
+              <li>
+                <Link href={"/mybookings"}>My Bookings</Link>
+              </li>
+              <li>
+                <Link href={"/add-facility"}>Add Facility</Link>
+              </li>
+              <li>
+                <Link href={"/manage-facilities"}>Manage My Facilities</Link>
+              </li>
               <li className="pt-2">
                 <button className="btn bg-cyan-500 hover:bg-cyan-600 border-none text-white">
                   Logout
@@ -97,6 +101,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+           <Link href={'/login'}> <button className="btn bg-cyan-500 text-white rounded-xl hover:bg-cyan-700">Login</button></Link>
         </div>
       </div>
     </div>
